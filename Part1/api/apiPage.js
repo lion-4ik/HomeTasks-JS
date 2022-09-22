@@ -13,8 +13,8 @@ const fixForNull = (value, key, name) => {
 const searchSomeRepos = ({target}) => {
   
   repositories.innerHTML=''
-  const value = target.value;
-  const newReposArr = reposArr.filter(item=> item.name.includes(value))
+  const value = target.value.toLowerCase();
+  const newReposArr = reposArr.filter(item=> item.name.toLowerCase().includes(value))
 
   if (newReposArr.length === 0) return repositories.textContent = 'таких не найдено репозиториев';
   newReposArr.forEach(elem=>createTableRepos(elem))
