@@ -1,0 +1,11 @@
+.cont {
+  display: flex;
+  margin: 30px 5px;
+  
+}
+.cont img {
+  max-width: 100px;
+  padding-left: 10px;
+  
+}
+
